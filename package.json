@@ -1,0 +1,25 @@
+{
+  "name": "ottomall",
+  "version": "1.0.0",
+  "description": "shopping mall",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oeso/ottoMall.git"
+  },
+  "keywords": [
+    "npay"
+  ],
+  "author": "o eunsun",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oeso/ottoMall/issues"
+  },
+  "homepage": "https://github.com/oeso/ottoMall#readme",
+  "dependencies": {
+    "express": "^4.15.4"
+  }
+}
