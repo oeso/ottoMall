@@ -3,13 +3,24 @@
 <head>
     <meta charset="utf-8">
     <title>ottoMall</title>
+    <link href="http://vjs.zencdn.net/6.2.7/video-js.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/ottomall.css">
-    <script src="./src/js/angular-1.5.11.js"></script>
-    <script src="./dist/js/ottomall.js"></script>
 </head>
-<body ng-controller="ottoBody">
+<body>
     <div class="skip"><a href="#content">skip navigation</a></div>
     <h1>MEAN Stack project</h1>
+
+    <video id="my-video" class="video-js" controls preload="auto" width="640" height="264"
+           poster="http://vjs.zencdn.net/v/oceans.png" data-setup="{}">
+        <source src="http://vjs.zencdn.net/v/oceans.mp4" type='video/mp4'>
+        <p class="vjs-no-js">
+            To view this video please enable JavaScript, and consider upgrading to a web browser that
+            <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+        </p>
+    </video>
+
+    <script src="http://vjs.zencdn.net/6.2.7/video.js"></script>
+
 
     <!-- include -->
     <header>
@@ -27,5 +38,13 @@
     <div id="wrap" ng-view>
 
     </div>
+
+    <script src="js/angualr-1.4.6/angular.js"></script>
+    <script src="js/angualr-1.4.6/angular-route.js"></script>
+    <script src="router.js"></script>
+    <script src="user/main/main.js"></script>
+    <script src="user/list/list.js"></script>
+    <script src="user/view/view.js"></script>
+    <script src="user/error/error.js"></script>
 </body>
 </html>

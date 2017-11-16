@@ -12,10 +12,8 @@ var dist = 'public/dist';
 var paths = {
   js : [
     'public/router.js',
-    'public/**/*.js',
+    'public/user/**/*.js',
     '!public/dist/js/ottomall.js',
-    '!public/src/js/angular-1.5.11.js',
-    '!public/src/js/angular-1.6.4.js',
     '!public/src/js/ottomall.js'
 ]};
 

@@ -1,14 +1,13 @@
 'use strict';
 
-var otto = angular.module('ottomall', []);
+var otto = angular.module('ottomall', ['ngRoute']);
 
-otto.config(['$routeProvider', function($routeProvider){
+otto.config(['$routeProvider','$logProvider', function($routeProvider, $logProvider){
     $routeProvider
-        .when('/', {templateUrl : 'index.html'})
-        .when('/main', {templateUrl : './main/main.html'})
-        .when('/list', {templateUrl : 'list/list.html'})
-        .when('/view', {templateUrl : 'view/view.html'})
-        .when('/login', {templateUrl : 'login/login.html'})
-
-        .otherwise({ redirectTo : '/error.html'})
+        .when('/', {templateUrl : 'index.html', controller : ''})
+        .when('/main', {templateUrl : '/user/main/main.html', controller : 'mainCtrl'})
+        .when('/list', {templateUrl : 'user/list/list.html', controller : 'listCtrl'})
+        .when('/view', {templateUrl : 'user/view/view.html', controller : 'viewCtrl'})
+        .when('/login', {templateUrl : 'user/login/login.html', controller : 'loginCtrl'})
+        .otherwise({ redirectTo : 'user/error/error.html'})
 }]);
